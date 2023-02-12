@@ -1,0 +1,96 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans", sans-serif !important;
+}
+
+button,
+h1,
+h2,
+h3,
+h4,
+h5,
+a,
+h6 {
+  font-family: "Noto Sans", sans-serif !important;
+}
+
+.bg {
+  background: #1b1b1b !important;
+}
+
+.br {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.0745098039);
+}
+
+.flex {
+  display: flex;
+}
+
+.col {
+  flex-direction: column;
+}
+
+.row {
+  flex-direction: row;
+}
+
+.items-center {
+  justify-content: center;
+}
+
+.start {
+  justify-content: flex-start;
+}
+
+.mx {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.title {
+  line-height: 1em;
+  font-weight: bolder;
+}
+
+.desc1 {
+  font-weight: 300;
+  color: #d2d2d2;
+}
+
+.topbar-links a {
+  text-decoration: none;
+  color: white;
+}
+.topbar-links a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .title {
+    line-height: 1.2em;
+    font-size: 2.5em;
+  }
+  .desc1 {
+    font-size: 1em;
+  }
+}
+@media (min-width: 769px) {
+  .title {
+    line-height: 1.2em;
+    font-size: 4.4em;
+  }
+  .desc1 {
+    font-size: 1.2em;
+  }
+}
+@media (min-width: 1269px) {
+  .title {
+    line-height: 1.2em;
+    font-size: 5.7em;
+  }
+  .desc1 {
+    font-size: 1.5em;
+  }
+}/*# sourceMappingURL=styles.css.map */
