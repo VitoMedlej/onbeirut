@@ -1,4 +1,5 @@
 import Intro from '@/Components/Sections/Intro/Intro'
+import SocialMedia from '@/Components/Sections/Social/SocialMedia'
 import Topbar from '@/Components/Topbar/Topbar'
 import Head from 'next/head'
 
@@ -23,6 +24,7 @@ export default function Home() {
       </Head>
       <Topbar/>
       <Intro/>
+      <SocialMedia/>
       <main>
      
      hello world

@@ -6,7 +6,7 @@ const Intro = () => {
   return (
     <Box 
     className="bg "
-    sx={{height:'2000px'}}>
+    sx={{pb:'3em'}}>
         <Box 
         className='mx'
         sx={{color:'white',pt:{xs:'3em',sm:'3.5em'},px:'1em'}}>
@@ -16,7 +16,7 @@ const Intro = () => {
 
         <Typography
         component='h1'
-        sx={{maxWidth:'md',pb:{xs:'.55em',md:'1em'}}} className='title'> 
+        sx={{maxWidth:'md',pb:{xs:'.55em',md:'1em'},pt:'1em'}} className='title'> 
             Give Us Your Fucking Money Now
         </Typography>
         </Grid>
@@ -26,12 +26,17 @@ const Intro = () => {
         className='desc1'>
         Your website should be a marketing asset, not an engineering challenge.
         </Typography>
-        <CustomButton>
+        <CustomButton sx={{background:'white',color:'black',px:'1em'}}>
           Get One Today
         </CustomButton>
         </Grid>
         </Grid>
         
+        </Box>
+        <Box  >
+          <Box sx={{width:'90%',height:'100%',pt:'4em'}} className="mx">
+          <img style={{borderRadius:'7px'}} src="https://kangxiang.info/wp-content/uploads/2017/11/website-design-process-kl-selangor-scaled.jpg" alt="" className="img" />
+          </Box>
         </Box>
     </Box>
   )

@@ -40,17 +40,17 @@ export default function ButtonAppBar() {
             mylogo
           </Box>
           <Box className='topbar-links'
-           sx={{display:{xs:'none',md:'flex'}}}>
+           sx={{mr:'1em',display:{xs:'none',md:'flex'}}}>
             <Link href='/'>
               <Typography  component='p'>Our Pricing</Typography>
             </Link>
           </Box>
-          <CustomButton className='bg' sx={{padding:0,display:{xs:'flex',md:'flex'},mx:'.5em'}} variant='standard'>
+          {/* <CustomButton className='bg' sx={{padding:0,display:{xs:'flex',md:'flex'},mx:'.5em'}} variant='standard'>
           Button
-          </CustomButton>
-          {/* <CustomButton>
-            Contact Us
           </CustomButton> */}
+          <CustomButton>
+            Contact Us
+          </CustomButton>
           {/* <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
             News
           </Typography> */}
