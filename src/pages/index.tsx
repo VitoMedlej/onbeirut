@@ -1,5 +1,9 @@
 import Intro from '@/Components/Sections/Intro/Intro'
 import SocialMedia from '@/Components/Sections/Social/SocialMedia'
+import About from '@/Components/Sections/about/About'
+import Portfolio from '@/Components/Sections/portfolio/Portfolio'
+import Pricing from '@/Components/Sections/pricing/Pricing'
+import Reasons from '@/Components/Sections/reason/Reasons'
 import Topbar from '@/Components/Topbar/Topbar'
 import Head from 'next/head'
 
@@ -23,9 +27,13 @@ export default function Home() {
   <meta property="og:site_name" content="OnBeirut"/>
       </Head>
       <Topbar/>
+      <main>
       <Intro/>
       <SocialMedia/>
-      <main>
+      <About/>
+      <Reasons/>
+      <Portfolio/>
+      <Pricing/>
      
      hello world
   

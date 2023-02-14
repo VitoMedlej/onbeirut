@@ -8,6 +8,8 @@ body {
 button,
 h1,
 h2,
+ul, li,
+p,
 h3,
 h4,
 h5,
@@ -23,6 +25,10 @@ h6 {
 
 .bg {
   background: #1b1b1b !important;
+}
+
+.border {
+  border-radius: 8px;
 }
 
 .br {
@@ -58,13 +64,39 @@ h6 {
   margin: 0 auto;
 }
 
+.auto {
+  margin: 0 auto;
+}
+
+.color {
+  color: #112a6f;
+}
+
+.gap {
+  gap: 0.5em;
+}
+
+.shadow {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.desc2 {
+  color: rgb(50, 50, 50);
+  font-weight: 300;
+}
+
 .title {
   line-height: 1em;
   font-weight: bolder;
 }
 
+.title2 {
+  max-width: 900px;
+  font-weight: bold;
+}
+
 .desc1 {
-  font-weight: 300;
+  font-weight: 400;
   color: #d2d2d2;
 }
 
@@ -76,6 +108,23 @@ h6 {
   text-decoration: underline;
 }
 
+.desc3 {
+  font-weight: 300;
+  color: #d2d2d2;
+}
+
+.swiper-button-prev, .swiper-button-disabled, .swiper-button-next {
+  color: white !important;
+  background: transparent !important;
+  border-radius: 50%;
+  width: 40px !important;
+  height: 40px !important;
+}
+
+.plan-perks ul li {
+  padding-top: 0.35em;
+}
+
 @media (max-width: 768px) {
   .title {
     line-height: 1.2em;
@@ -83,6 +132,15 @@ h6 {
   }
   .desc1 {
     font-size: 1em;
+  }
+  .desc2 {
+    font-size: 1em;
+  }
+  .title2 {
+    font-size: 1.9em;
+  }
+  .title3 {
+    font-size: 1.5em;
   }
 }
 @media (min-width: 769px) {
@@ -93,6 +151,15 @@ h6 {
   .desc1 {
     font-size: 1.2em;
   }
+  .title3 {
+    font-size: 2.5em;
+  }
+  .title2 {
+    font-size: 3.5em;
+  }
+  .desc2 {
+    font-size: 1.2em;
+  }
 }
 @media (min-width: 1269px) {
   .title {
@@ -101,5 +168,11 @@ h6 {
   }
   .desc1 {
     font-size: 1.5em;
+  }
+  .title3 {
+    font-size: 3em;
+  }
+  .title2 {
+    font-size: 4.5em;
   }
 }/*# sourceMappingURL=styles.css.map */

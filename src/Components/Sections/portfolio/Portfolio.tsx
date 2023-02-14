@@ -1,11 +1,13 @@
 import CustomButton from '@/Components/Buttons/CustomButton'
 import {Box, Grid, Typography} from '@mui/material'
 import React from 'react'
+import Carousel from './Carousel'
 
-const Intro = () => {
+const Index = () => {
     return (
         <Box className="bg " sx={{
-            pb: '3em'
+            pb: '3em',
+            mt:'6em'
         }}>
             <Box
                 className='mx'
@@ -19,51 +21,29 @@ const Intro = () => {
             }}>
                 <Grid container>
 
-                    <Grid item xs={12} md={8}>
+                    <Grid item xs={12} >
 
                         <Typography
                             component='h1'
                             sx={{
                             maxWidth: 'md',
                             pb: {
-                                xs: '.55em',
-                                md: '1em'
+                                xs: '.15em',
                             },
                         }}
-                            className='title'>
+                            className='title2'>
                             Give Us Your Fucking Money Now
                         </Typography>
-                    </Grid>
-                    <Grid
-                        sx={{
-                        alignItems: {
-                            md: 'center'
-                        },
-                        gap: {
-                            xs: '.75em',
-                            md: '1.25em'
-                        }
-                    }}
-                        className=' items-center flex col'
-                        item
-                        xs={12}
-                        md={4}>
-                        <Typography component='h3' className='desc1'>
-                            Your website should be a marketing asset, not an engineering challenge.
-                        </Typography>
-                        <CustomButton
-                            sx={{
-                            background: 'white',
-                            color: 'black',
-                            px: '1em'
-                        }}>
-                            Get One Today
-                        </CustomButton>
+               
+
                     </Grid>
                 </Grid>
 
             </Box>
-            <Box >
+            <Box sx={{mt:{xs:'2.5em',sm:'4em'},mx:'1em'}}>
+                <Carousel/>
+            </Box>
+            {/* <Box >
                 <Box
                     sx={{
                     width: '90%',
@@ -79,9 +59,9 @@ const Intro = () => {
                         alt=""
                         className="img"/>
                 </Box>
-            </Box>
+            </Box> */}
         </Box>
     )
 }
 
-export default Intro
+export default Index
