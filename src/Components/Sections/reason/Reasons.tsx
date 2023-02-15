@@ -3,6 +3,8 @@ import {Box, Grid, Typography} from '@mui/material'
 import Link from 'next/link'
 import React from 'react'
 import {BiLinkExternal} from 'react-icons/bi'
+import { BsArrowUpRight} from 'react-icons/bs';
+
 
 const Reasons = () => {
     return (
@@ -73,11 +75,14 @@ const Reasons = () => {
                             veniam necessitatibus explicabo laboriosam ipsum saepe esse officiis dolorem!
                         </Typography>
                         <Link
+                            className='flex center'
                             href='/'
                             style={{
+                            gap:'.15em',
                             color: 'black',
                             paddingTop: '.75em'
                         }}>
+                            
                             <Typography
                                 component='h1'
                                 sx={{
@@ -86,6 +91,7 @@ const Reasons = () => {
                             }}>
                                 Get One
                             </Typography>
+                            <BsArrowUpRight/>
                         </Link>
                         <Box
                             sx={{

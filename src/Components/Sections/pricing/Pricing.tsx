@@ -9,12 +9,14 @@ interface IPlanCard {
     title : string;
     planFeatures : string[];
     description : string;
+    bg?:string
 }
 const PlanCard = ({
     price,
     title,
     description
-    ,planFeatures
+    ,planFeatures,
+    bg
 }
 :IPlanCard) => {
       
@@ -24,7 +26,7 @@ const PlanCard = ({
             sx={{
             position : 'relative',
             textAlign: 'left',
-            backgroundImage:'linear-gradient(135deg,rgba(221,125,207,.1),hsl(288deg 100% 35% / 28%))',
+            backgroundImage:bg || 'linear-gradient(135deg,rgba(221,125,207,.1),hsl(288deg 100% 35% / 28%))',
             width: '100% !important',
             boxShadow: 'rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px',
             borderRadius: '7px'
@@ -45,6 +47,7 @@ const PlanCard = ({
             <Typography
                 sx={{
                     py:'.5em',
+                    fontSize:{xs:'.9em',sm:'1em'},
                     color: '#707070'
             }}
                 >
@@ -80,7 +83,8 @@ const PlanCard = ({
                 <Typography
                 component='h5'
                     sx={{
-                    fontWeight: '600'
+                    fontWeight: '600',
+                    color:'#707070'
                 }}
 
                     >
@@ -142,7 +146,9 @@ const Index = () => {
 
 
 
-            <Grid container sx={{mt:{xs:'2.5em',sm:'4em'}}}>
+            <Grid container sx={{
+                    justifyContent: 'space-between',
+                mt:{xs:'2.5em',sm:'4em'}}}>
                         <Grid xs={12} sm={6}  item>
                                <PlanCard
                                price={19.99}
@@ -150,32 +156,28 @@ const Index = () => {
                                description={`Browse our library of 400+ free lessons covering everything from layout and typography to interactions and 3D transforms`}
                                planFeatures={['first shit','cheap shit']}
                                />
-                                {/* <Box className='shadow price-card' sx={{px:{xs:1,sm:1.5,md:2},py:2}}>
-                                    <Typography component='h1' sx={{fontWeight:'700',fontSize:'2em'}}>
-                                        Simple Plan
-                                    </Typography>
-                                    <Typography sx={{pt:.25,color:'#050505 !important'}} className='desc3'  component='p'>
-                                    Browse our library of 400+ actions and 3D transforms.
-                                     </Typography>
-                                     <Typography sx={{pt:1.25,color:'black !important',fontWeight:'200 !important'}} className='title3'  component='h1'>
-                                        $24.99
-                                     </Typography>
-                                <Box className='plan-perks' sx={{color:'#222222'}}>
-                                    
-                                    <ul>
-                                        <li>gjas9f qwrjiqwjof qwijfiasf</li>
-                                        <li>fooer</li>
-                                        <li>fooer</li>
-                                        <li>fooer</li>
-                                    </ul>
-                                </Box>
-                                </Box> */}
+                     
                         </Grid>
-                        <Grid xs={12} sm={6}  item>
+                        <Grid xs={12} sm={5.9}
+                        sx={{mt:{xs:2,sm:0}}}
+                        item>
+                        <PlanCard
+                               bg={'linear-gradient(135deg,rgb(51 121 255 / 10%),hsl(237deg 100% 50% / 45%))'}
 
+                               price={19.99}
+                               title='Simple Plan'
+                               description={`Browse our library of 400+ free lessons covering everything from layout and typography to interactions and 3D transforms`}
+                               planFeatures={['first shit','cheap shit']}
+                               />
                         </Grid>
-                        <Grid xs={12}  item>
-
+                        <Grid xs={12} sx={{mt:2}} item>
+                        <PlanCard
+                            bg={` linear-gradient(135deg,rgb(255 226 0 / 10%),hsl(53deg 100% 45% / 52%))`}
+                               price={19.99}
+                               title='Simple Plan'
+                               description={`Browse our library of 400+ free lessons covering everything from layout and typography to interactions and 3D transforms`}
+                               planFeatures={['first shit','cheap shit']}
+                               />
                         </Grid>
             </Grid>
             </Box>

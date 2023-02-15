@@ -1,6 +1,7 @@
 import Intro from '@/Components/Sections/Intro/Intro'
 import SocialMedia from '@/Components/Sections/Social/SocialMedia'
 import About from '@/Components/Sections/about/About'
+import Contact from '@/Components/Sections/contact/Contact'
 import Portfolio from '@/Components/Sections/portfolio/Portfolio'
 import Pricing from '@/Components/Sections/pricing/Pricing'
 import Reasons from '@/Components/Sections/reason/Reasons'
@@ -34,6 +35,7 @@ export default function Home() {
       <Reasons/>
       <Portfolio/>
       <Pricing/>
+      <Contact/>
      
      hello world
   
