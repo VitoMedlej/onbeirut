@@ -78,6 +78,7 @@ const PlanCard = ({
             <Box className='list'>
 
                 <Typography
+                className='desc2'
                 component='h5'
                     sx={{
                     fontWeight: '600'
@@ -92,9 +93,7 @@ const PlanCard = ({
                     {planFeatures.map((feature,idx:number)=>{
 
                        return <li  key={idx}>
-                        <Typography component='p'
-                       
-                        >
+                        <Typography component='p'>
                             {feature}
                         </Typography>
                     </li>
