@@ -51,11 +51,11 @@ const Footer = () => {
                   </Typography>
                   <ul className='footer-links' style={{listStyle:'none'}}>
                     {footerSocial.map((link) => <li className='flex gap grayed' key={link.title}>
-                        
+
                         <Typography component='h6' sx={{fontSize:'.9em'}}>
                           {link.title}:
                         </Typography>
-                        {link.href ? <a href={link.href}  className='white'>
+                        {link.href ? <a target="_blank" href={link.href}  className='white'>
                               {link.value}
                         </a> : <Typography component='h6' sx={{fontSize:'1em'}}>
                           {link.value}

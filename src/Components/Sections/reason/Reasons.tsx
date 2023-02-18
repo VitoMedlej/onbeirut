@@ -8,7 +8,7 @@ import { BsArrowUpRight} from 'react-icons/bs';
 
 const Reasons = () => {
     return (
-        <Box >
+        <>
             <Box className='mx' sx={{
                 px: '1em'
             }}>
@@ -20,7 +20,7 @@ const Reasons = () => {
                 }}>Why Would You Need A Website?</Typography>
             </Box>
             <Grid container>
-                <Grid xs={12} md={6}>
+                <Grid xs={12} md={6} item>
                     <Box
                         sx={{
                         background: '#00ff1875',
@@ -50,6 +50,7 @@ const Reasons = () => {
                     </Box>
                 </Grid>
                 <Grid
+                item
                     xs={12}
                     md={6}
                     sx={{
@@ -85,14 +86,13 @@ const Reasons = () => {
                         </Typography>
                         <Link
                             className='flex center'
-                            href='/'
+                            href='/contact'
                             style={{
                             width:'100%',
                             gap:'.15em',
                             color: 'black',
                             paddingTop: '.75em'
                         }}>
-                            <Link href='contact'>
                             <Typography
                                 component='h1'
                                 sx={{
@@ -101,7 +101,6 @@ const Reasons = () => {
                                 }}>
                                 Get One
                             </Typography>
-                                </Link>
                             <BsArrowUpRight/>
                         </Link>
                         <Box
@@ -161,7 +160,7 @@ const Reasons = () => {
                     </Box>
                 </Grid>
             </Grid>
-        </Box>
+        </>
 
     )
 }

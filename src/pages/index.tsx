@@ -7,6 +7,7 @@ import Portfolio from '@/Components/Sections/portfolio/Portfolio'
 import Pricing from '@/Components/Sections/pricing/Pricing'
 import Reasons from '@/Components/Sections/reason/Reasons'
 import Topbar from '@/Components/Topbar/Topbar'
+import Whatsapp from '@/Components/Whatsapp/Whatsapp'
 import Head from 'next/head'
 
 
@@ -29,7 +30,8 @@ export default function Home() {
   <meta property="og:site_name" content="OnBeirut"/>
       </Head>
       <Topbar/>
-      <main>
+      <main className='relative'>
+    <Whatsapp/>
       <Intro/>
       <SocialMedia/>
       <About/>
@@ -38,7 +40,7 @@ export default function Home() {
       <Pricing/>
       <Contact/>
       <Footer/>
-  
+    
       </main>
     </>
   )

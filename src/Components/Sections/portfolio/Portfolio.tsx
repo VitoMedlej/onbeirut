@@ -33,7 +33,7 @@ const Index = () => {
                             },
                         }}
                             className='title2'>
-                            Give Us Your Fucking Money Now
+                            Recent Success Stories From Our Clients
                         </Typography>
                
 
