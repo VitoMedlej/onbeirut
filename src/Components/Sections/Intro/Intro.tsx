@@ -31,7 +31,7 @@ const Intro = () => {
                             },
                         }}
                             className='title'>
-                            Give Us Your Fucking Money Now
+                                The Web Dev Agency You Always Wanted
                         </Typography>
                     </Grid>
                     <Grid
@@ -49,7 +49,9 @@ const Intro = () => {
                         xs={12}
                         md={4}>
                         <Typography component='h3' className='desc1'>
-                            Your website should be a marketing asset, not an engineering challenge.
+                            Your bussiness deserves an awesome website, we are here
+                            to ensure that.
+
                         </Typography>
                         <CustomButton
                             sx={{
@@ -58,7 +60,7 @@ const Intro = () => {
                             color: 'black',
                             px: '1em'
                         }}>
-                            Get One Today
+                            Reach Us Now
                         </CustomButton>
                     </Grid>
                 </Grid>

@@ -71,26 +71,37 @@ const Reasons = () => {
                             color: '#515151 !important'
                         }}
                             component='h4'>
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus qui cupiditate
-                            veniam necessitatibus explicabo laboriosam ipsum saepe esse officiis dolorem!
+                                According to Ada Durzyńska, "70-80% of people were researching companies online before visiting it/making a purchase, and the same percentage of customers could be lost to small businesses without a website"
+                        </Typography>
+                        <Typography
+                            className='desc2'
+                            sx={{
+                            pt:1,
+                            color: '#515151 !important'
+                        }}
+                            component='h4'>
+                                If that sounds convincing enough, waste no time, a website is an low risk investment
+                                that produces great results and growth.
                         </Typography>
                         <Link
                             className='flex center'
                             href='/'
                             style={{
+                            width:'100%',
                             gap:'.15em',
                             color: 'black',
                             paddingTop: '.75em'
                         }}>
-                            
+                            <Link href='contact'>
                             <Typography
                                 component='h1'
                                 sx={{
-                                fontWeight: '500',
-                                fontSize: '1.2em'
-                            }}>
+                                    fontWeight: '500',
+                                    fontSize: '1.2em'
+                                }}>
                                 Get One
                             </Typography>
+                                </Link>
                             <BsArrowUpRight/>
                         </Link>
                         <Box
@@ -107,8 +118,9 @@ const Reasons = () => {
                                 paddingTop: '.25em'
                             }}/>
                             <Box className='  center '>
-                                <Link
-                                    href='/'
+                                <a
+                                target="_blank"
+                                    href='https://www.getresponse.com/blog/why-do-i-need-a-website#:~:text=1.-,Having%20a%20website%20makes%20you%20look%20professional%20and%20increases%20trust,is%20an%20instant%20credibility%20boost.'
                                     className='link color'
                                     style={{
                                     textDecoration: 'none'
@@ -121,17 +133,17 @@ const Reasons = () => {
                                             md: '1.5em'
                                         }
                                     }}>
-                                        Why Do you Need A website?
+                                      Why Do I Need a Website?
                                     </Typography>
-                                </Link>
+                                </a>
                                 <Typography
                                     sx={{
-                                    pt: 2.5
+                                    pt: 2.5,
+                                    color:'#717171 !important'
                                 }}
-                                    className='desc2'
-                                    component='h2'>
-                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates natus ab
-                                    asperiores incidunt enim eligendi.
+                                    className='desc3'
+                                    component='h3'>
+                               When it seems that social media rule the Internet, you might ask yourself, “Do I need a website?” The answer is yes, and I’m here to tell you why.
                                 </Typography>
                             </Box>
                         </Box>

@@ -8,7 +8,8 @@ const About = () => {
 
             <Typography
                 sx={{
-                fontSize: {
+                    maxWidth:'md',
+                    fontSize: {
                     xs: '1.9em',
                     sm: '2.4em',
                     md: '2.6em'
@@ -20,11 +21,11 @@ const About = () => {
             }}
                 component='h2'>
 
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex assumenda
-                consequatur architecto est explicabo, recusandae voluptatibus animi ab ipsum eos
-                voluptates cumque tempore enim sed, quam sunt veniam, velit tenetur sequi?
-                Soluta, nam impedit sunt unde reprehenderit similique totam perferendis odit
-                harum a! Similique, odio.
+                Despite being small, we deliver great results.
+                OnBeirut focuses on helping small and medium bussiness achieve the success they strive,
+                what does this mean? We simple develop personalized, high performance websites that 
+                attracts customers, sales, leads to you; all for an insignificant cost, afterall, we are here
+                to help you grow and not increase your expenses. 
             </Typography>
         </Box>
         <Divider></Divider>
