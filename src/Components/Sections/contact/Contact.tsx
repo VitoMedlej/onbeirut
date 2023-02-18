@@ -5,6 +5,7 @@ import ContactForm from './ContactForm'
 const Contact = () => {
     return (
         <Box
+            id='contact'
             className="bg "
             sx={{
             pb: '3em',

@@ -23,7 +23,6 @@ const PlanCard = ({
         
     return (
         <Box
-        id='pricing'
             sx={{
             position : 'relative',
             textAlign: 'left',
@@ -116,7 +115,10 @@ const PlanCard = ({
 
 const Index = () => {
     return (
-        <Box sx={{
+        <Box 
+        id='pricing'
+        
+        sx={{
             pb: '3em',
             mt:'6em'
         }}>

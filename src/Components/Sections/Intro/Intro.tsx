@@ -53,6 +53,7 @@ const Intro = () => {
                         </Typography>
                         <CustomButton
                             sx={{
+                                maxWidth:'200px',
                             background: 'white',
                             color: 'black',
                             px: '1em'
