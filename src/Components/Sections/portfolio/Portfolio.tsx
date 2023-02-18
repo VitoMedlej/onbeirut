@@ -5,7 +5,8 @@ import Carousel from './Carousel'
 
 const Index = () => {
     return (
-        <Box className="bg " sx={{
+        <Box 
+        id='portfolio' className="bg " sx={{
             pb: '3em',
             mt:'6em'
         }}>

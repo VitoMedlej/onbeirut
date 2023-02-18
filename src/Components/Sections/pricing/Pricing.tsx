@@ -23,6 +23,7 @@ const PlanCard = ({
         
     return (
         <Box
+        id='pricing'
             sx={{
             position : 'relative',
             textAlign: 'left',

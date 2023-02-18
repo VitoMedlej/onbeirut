@@ -4,6 +4,7 @@ import {VscMenu} from 'react-icons/vsc'
 import Link from 'next/link';
 import { Typography ,Toolbar ,Box,IconButton } from '@mui/material';
 import CustomButton from '../Buttons/CustomButton';
+import Logo from '../Logo/Logo';
 
 
 
@@ -36,9 +37,7 @@ export default function ButtonAppBar() {
       sx={{color:'white',py:'1em',width:'100%',boxShadow:'none'}}
       position="static">
         <Toolbar className='' sx={{justifyContent:'space-between'}}>
-          <Box sx={{flex:1}}>
-            mylogo
-          </Box>
+          <Logo/>
           <Box className='topbar-links'
            sx={{mr:'1em',display:{xs:'none',md:'flex'}}}>
             <Link href='/'>
@@ -78,9 +77,7 @@ export default function ButtonAppBar() {
       ,width:'100%',boxShadow:'none'}}
       position="fixed">
         <Toolbar sx={{justifyContent:'space-between'}}>
-          <Box sx={{flex:1}}>
-            mylogo
-          </Box>
+          <Logo color='black'/>
           {/* <Box className='topbar-links' sx={{xs:'none',md:'flex'}}>
             <Link href='/'>
               <Typography>Some Link</Typography>

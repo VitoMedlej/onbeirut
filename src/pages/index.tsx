@@ -1,3 +1,4 @@
+import Footer from '@/Components/Footer/Footer'
 import Intro from '@/Components/Sections/Intro/Intro'
 import SocialMedia from '@/Components/Sections/Social/SocialMedia'
 import About from '@/Components/Sections/about/About'
@@ -36,8 +37,7 @@ export default function Home() {
       <Portfolio/>
       <Pricing/>
       <Contact/>
-     
-     hello world
+      <Footer/>
   
       </main>
     </>

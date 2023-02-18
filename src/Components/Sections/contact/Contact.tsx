@@ -1,5 +1,6 @@
 import {Box, Grid, Typography} from '@mui/material'
 import React from 'react'
+import ContactForm from './ContactForm'
 
 const Contact = () => {
     return (
@@ -14,14 +15,14 @@ const Contact = () => {
                 sx={{
                 color: 'white',
                 pt: {
-                    xs: '3em',
-                    sm: '3.5em'
+                    xs: '4em',
+                    sm: '5.5em'
                 },
                 px: '1em'
             }}>
-                <Grid container>
+                <Grid container className='auto flex  items-center'>
 
-                    <Grid item xs={12} sm={10} md={6}>
+                    <Grid sx={{mb:{xs:3,md:0}}} item xs={12} sm={10} md={6}>
 
                         <Typography
                             component='h1'
@@ -49,7 +50,7 @@ const Contact = () => {
 
                     </Grid>
                     <Grid item xs={12} sm={10} md={6}>
-
+<ContactForm/>
                         
 
                     </Grid>

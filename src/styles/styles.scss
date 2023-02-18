@@ -16,6 +16,13 @@ a,
 h6 {
     font-family: 'Noto Sans', sans-serif !important;
 }
+.white {
+    color: white;
+}
+.grayed {
+    color: rgb(174, 174, 174);
+
+}
 .img {
     width: 100%;
     height: 100%;
@@ -41,6 +48,10 @@ $clr: #112a6f;
 }
 .items-center {
     justify-content: center;
+}
+.items-between {
+    justify-content: space-between;
+
 }
 .start {
     justify-content: flex-start;
@@ -81,6 +92,20 @@ $clr: #112a6f;
     font-weight: 400;
     color: #d2d2d2;
 }
+.footer-title {
+    color:white;
+    font-weight: 500;
+    font-size: 1.3em;
+}
+.footer-links {
+    padding: 0;
+    li {
+        padding-top: .45em;
+        a {
+            color :#5d7fff;
+        }
+    }
+}
 .topbar-links{
 
     a {
@@ -103,7 +128,11 @@ $clr: #112a6f;
     width: 40px !important;
     height: 40px !important; 
 }
-
+.form {
+    input {
+        color:white
+    }
+}
 // .price-card {
     // h1 {
         // font-weight: 500;

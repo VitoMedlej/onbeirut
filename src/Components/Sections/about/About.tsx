@@ -4,7 +4,7 @@ const About = () => {
     return (
         <>
 
-<Box className='mx'>
+<Box id='about' className='mx'>
 
             <Typography
                 sx={{
