@@ -1,10 +1,13 @@
 import {useEffect, useState} from 'react';
 import AppBar from '@mui/material/AppBar';
 import {VscMenu} from 'react-icons/vsc'
+import {AiOutlineCloseCircle} from 'react-icons/ai'
+
 import Link from 'next/link';
-import { Typography ,Toolbar ,Box,IconButton } from '@mui/material';
+import { Typography ,Toolbar ,Box,IconButton, Drawer, Divider } from '@mui/material';
 import CustomButton from '../Buttons/CustomButton';
 import Logo from '../Logo/Logo';
+import SocialMedia from '../Sections/Social/SocialMedia';
 
 
 
@@ -13,6 +16,7 @@ import Logo from '../Logo/Logo';
 
 export default function ButtonAppBar() {
   const [isVisible, setVisible] = useState(false);
+  const [open, setOpen] = useState(false);
   useEffect(() => {
 
     const handleScroll = () => {
@@ -29,6 +33,9 @@ export default function ButtonAppBar() {
 
   }, [])
   return (
+    <>
+
+  
     <Box
     className='bg'
     sx={{ flexGrow: 1 }}>
@@ -59,6 +66,7 @@ export default function ButtonAppBar() {
           </Typography> */}
           {/* <Button color="inherit">Login</Button> */}
           <IconButton
+          onClick={()=>setOpen(!open)}
             size="large"
             color="inherit"
             aria-label="menu"
@@ -108,6 +116,7 @@ export default function ButtonAppBar() {
           </Typography> */}
           {/* <Button color="inherit">Login</Button> */}
           <IconButton
+            onClick={()=>setOpen(!open)}
             size="large"
             color="inherit"
             aria-label="menu"
@@ -118,5 +127,40 @@ export default function ButtonAppBar() {
         </Toolbar>
       </AppBar>
     </Box>
+    <Drawer
+      anchor={'right'}
+      open={open}
+      onClose={()=>setOpen(false)}
+    >
+      <Box className="flex between center" sx={{width:'250px',px:.5}}>
+      <Logo flex={{xs:1,md:0}} color='black'/>
+      <IconButton
+      onClick={()=>setOpen(false)}
+            size="large"
+            color="error"
+            aria-label="menu"
+            sx={{display:{xs:'flex'}, ml: 0 }}>
+            <AiOutlineCloseCircle />
+          </IconButton>
+      </Box>
+          <Divider/>
+          <Box className='topbar-links gap-2 flex col'  sx={{mx:2,my:2,fontWeight:'300',fontSize:'1.3em',flex:1}}>
+            <Link 
+            onClick={()=>setOpen(false)}
+            className='black'  href={'/'}>Home</Link>
+            <Link className='black'  
+            
+            onClick={()=>setOpen(false)}
+            href={'#about'}>About</Link>
+            <Link
+            onClick={()=>setOpen(false)}
+            className='black'  href={'#pricing'}>Pricing</Link>
+            <Link
+            onClick={()=>setOpen(false)}
+            className='black'  href={'#portfolio'}>Projects</Link>
+          <SocialMedia sx={{margin:'0 !important',gap:.5,padding:'0 !important'}}/> 
+          </Box>
+    </Drawer>
+    </>
   );
 }
