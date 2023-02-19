@@ -38,16 +38,16 @@ $clr: #112a6f;
     border-bottom: 1px solid #00000013;
 }
 .flex {
-    display: flex;
+    display: flex !important;
 }
 .end {
     justify-content: flex-end;
 }
 .col {
-    flex-direction: column;
+    flex-direction: column !important;
 }
 .row {
-    flex-direction: row;
+    flex-direction: row !important;
 }
 .items-center {
     justify-content: center;
@@ -128,7 +128,23 @@ $clr: #112a6f;
 }
 .desc3 {
     font-weight: 300 !important;
-    color: #d2d2d2 !important;
+    color: #d2d2d2 ;
+}
+.layer {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #0000004d;
+    z-index: 55;
+    width: 100%;
+    height: 100%;
+}
+.relative {
+    position: relative !important;
+}
+.cover 
+{
+    object-fit: cover !important;
 }
 .swiper-button-prev ,.swiper-button-disabled  , .swiper-button-next {
     color :white !important;

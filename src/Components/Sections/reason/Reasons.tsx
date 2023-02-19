@@ -85,7 +85,7 @@ const Reasons = () => {
                         </Typography>
                         <Link
                             className='flex center'
-                            href='/contact'
+                            href='#contact'
                             style={{
                             width:'100%',
                             gap:'.15em',

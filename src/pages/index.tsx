@@ -6,6 +6,7 @@ import Contact from '@/Components/Sections/contact/Contact'
 import Portfolio from '@/Components/Sections/portfolio/Portfolio'
 import Pricing from '@/Components/Sections/pricing/Pricing'
 import Reasons from '@/Components/Sections/reason/Reasons'
+import Services from '@/Components/Sections/services/Services'
 import Topbar from '@/Components/Topbar/Topbar'
 import Whatsapp from '@/Components/Whatsapp/Whatsapp'
 import Head from 'next/head'
@@ -35,6 +36,7 @@ export default function Home() {
       <Intro/>
       <SocialMedia/>
       <About/>
+      <Services/>
       <Reasons/>
       <Portfolio/>
       <Pricing/>
