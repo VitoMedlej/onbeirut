@@ -43,8 +43,7 @@ const Reasons = () => {
                             height: '100%'
                         }}>
                             <img
-                                src="https://source.unsplash.com/user/c_v_r/1600x1000"
-                                alt="Image"
+                                src={`https://res.cloudinary.com/dwxm8f25f/image/upload/v1676813799/google-analytics-audience-template_jr8vxg.png`}                                alt="Image of website analytics"
                                 className="img border "/>
                         </Box>
                     </Box>
@@ -81,7 +80,7 @@ const Reasons = () => {
                             color: '#515151 !important'
                         }}
                             component='h4'>
-                                If that sounds convincing enough, waste no time, a website is an low risk investment
+                                You could always learn more; but waste no time, a website is a low risk investment
                                 that produces great results and growth.
                         </Typography>
                         <Link
@@ -143,7 +142,7 @@ const Reasons = () => {
                                 }}
                                     className='desc3'
                                     component='h3'>
-                               When it seems that social media rule the Internet, you might ask yourself, “Do I need a website?” The answer is yes, and I’m here to tell you why.
+                               When it seems that social media rule the Internet, you might ask yourself, “Do I need a website?” The answer is yes, and I’m here to tell you why...
                                 </Typography>
                             </Box>
                         </Box>

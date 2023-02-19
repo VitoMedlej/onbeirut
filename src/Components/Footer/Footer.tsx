@@ -25,8 +25,8 @@ const Footer = () => {
         <Grid sx={{mb:1}}  className='' xs={12} sm={12} md={3.6} item>
           <Logo/>
         <Typography className='desc3' sx={{fontSize:'.9em'}} component='p'>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, quaerat doloribus quasi blanditiis voluptates fugiat.
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, quaerat doloribus quasi blanditiis voluptates fugiat.
+          We are a team of lebanese software engineers focused on building web solutions for small-medium businesses, and help them with their online presence to ensure that
+          you wont lose out on a massive market that you could earn a lot from 
         </Typography>
               
         </Grid>

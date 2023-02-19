@@ -55,10 +55,13 @@ const Intro = () => {
                         </Typography>
                         <CustomButton
                             sx={{
-                                maxWidth:'200px',
+                                maxWidth:'200px !important',
                             background: 'white',
                             color: 'black',
-                            px: '1em'
+                            px: '1em',
+                            ':hover': {
+                                color:'white'
+                            }
                         }}>
                             Reach Us Now
                         </CustomButton>

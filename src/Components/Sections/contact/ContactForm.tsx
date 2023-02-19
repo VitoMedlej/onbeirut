@@ -1,4 +1,4 @@
-import {Box, Button, TextField, Typography} from '@mui/material'
+import {Box, Button, Divider, TextField, Typography} from '@mui/material'
 import {useRouter} from 'next/router'
 import React, {useContext, useRef, useState} from 'react'
 // import Dots from '../Desgin/Dots'
@@ -35,7 +35,6 @@ const Contact = () => {
         let regexEmail = /^\S+@\S+\.\S+$/;
         if (!email || !email.match(regexEmail)) {
             setDetails({status: 400, error: 'Please Use a Valid Email Address'})
-            console.log('return: ');
             return;
         }
 
@@ -199,7 +198,7 @@ Location:
                     }}
                         
                         >
-                            Send us a message and we will respond to you within an hour.
+                            We reply almost immediately.
                         </Typography>
 
                     <Typography
@@ -286,7 +285,13 @@ Location:
                             <CustomButton  className='btn b1'>
                                 Submit
                             </CustomButton>
-
+                            <Divider/>
+                            <Box>
+                            Or talk to us on {' '}
+                            <a style={{color:'green',marginTop:'.5em'}} href='https://wa.me/+96181826445'>
+                                Whatsapp
+                            </a>
+                            </Box>
                         </Box>
                     </Box>
                 </Box>

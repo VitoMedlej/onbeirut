@@ -101,39 +101,39 @@ h6 {
 }
 
 .desc2 {
-  color: rgb(50, 50, 50);
-  font-weight: 300;
+  color: rgb(50, 50, 50) !important;
+  font-weight: 300 !important;
 }
 
 .title {
-  line-height: 1em;
-  font-weight: bolder;
+  line-height: 1em !important;
+  font-weight: bolder !important;
 }
 
 .title2 {
-  max-width: 900px;
-  font-weight: bold;
+  max-width: 900px !important;
+  font-weight: bold !important;
 }
 
 .desc1 {
-  font-weight: 400;
-  color: #d2d2d2;
+  font-weight: 400 !important;
+  color: #d2d2d2 !important;
 }
 
 .footer-title {
-  color: white;
-  font-weight: 500;
-  font-size: 1.3em;
+  color: white !important;
+  font-weight: 500 !important;
+  font-size: 1.3em !important;
 }
 
 .footer-links {
-  padding: 0;
+  padding: 0 !important;
 }
 .footer-links li {
-  padding-top: 0.45em;
+  padding-top: 0.45em !important;
 }
 .footer-links li a {
-  color: #5d7fff;
+  color: #5d7fff !important;
 }
 
 .black {
@@ -149,8 +149,8 @@ h6 {
 }
 
 .desc3 {
-  font-weight: 300;
-  color: #d2d2d2;
+  font-weight: 300 !important;
+  color: #d2d2d2 !important;
 }
 
 .swiper-button-prev, .swiper-button-disabled, .swiper-button-next {
@@ -171,52 +171,52 @@ h6 {
 
 @media (max-width: 768px) {
   .title {
-    line-height: 1.2em;
-    font-size: 2.5em;
+    line-height: 1.2em !important;
+    font-size: 2.5em !important;
   }
   .desc1 {
-    font-size: 1em;
+    font-size: 1em !important;
   }
   .desc2 {
-    font-size: 1em;
+    font-size: 1em !important;
   }
   .title2 {
-    font-size: 1.9em;
+    font-size: 1.9em !important;
   }
   .title3 {
-    font-size: 1.5em;
+    font-size: 1.5em !important;
   }
 }
 @media (min-width: 769px) {
   .title {
-    line-height: 1.2em;
-    font-size: 4.4em;
+    line-height: 1.2em !important;
+    font-size: 4.4em !important;
   }
   .desc1 {
-    font-size: 1.2em;
+    font-size: 1.2em !important;
   }
   .title3 {
-    font-size: 2.5em;
+    font-size: 2.5em !important;
   }
   .title2 {
-    font-size: 3.5em;
+    font-size: 3.5em !important;
   }
   .desc2 {
-    font-size: 1.2em;
+    font-size: 1.2em !important;
   }
 }
 @media (min-width: 1269px) {
   .title {
-    line-height: 1.2em;
-    font-size: 6.5em;
+    line-height: 1.2em !important;
+    font-size: 6.5em !important;
   }
   .desc1 {
-    font-size: 1.5em;
+    font-size: 1.5em !important;
   }
   .title3 {
-    font-size: 3em;
+    font-size: 3em !important;
   }
   .title2 {
-    font-size: 4.5em;
+    font-size: 4.5em !important;
   }
 }/*# sourceMappingURL=styles.css.map */

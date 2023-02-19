@@ -1,6 +1,7 @@
 import {Box, Grid, Typography} from '@mui/material'
 import React from 'react'
 import ContactForm from './ContactForm'
+import SocialMedia from '../Social/SocialMedia'
 
 const Contact = () => {
     return (
@@ -34,21 +35,21 @@ const Contact = () => {
                             }
                         }}
                             className='title2'>
-                            Give Us Your Fucking Money Now
+                                What is stopping you? just message us!
                         </Typography>
                         
                         <Typography
                             component='h2'
                             sx={{
                             maxWidth: 'md',
-                            pt: 
+                            py: 
                                 '.55em'
                             
                         }}
-                            className='desc1'>
-                            Give Us Your Fucking Money Now
+                            className='desc3'>
+                                Get in touch today, we offer free services as well.
                         </Typography>
-
+                        <SocialMedia sx={{mt:'.45em !important',justifyContent:'flex-start !important'}}/>
                     </Grid>
                     <Grid item xs={12} sm={10} md={6}>
 <ContactForm/>
