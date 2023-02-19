@@ -40,7 +40,7 @@ const SocialMedia = ({sx} : {
                 if (!link.Icon) 
                     return;
                 
-                return <a target="_blank" key={link.href} href={`${link.href}`}>
+                return <a rel="noreferrer" target="_blank" key={link.href} href={`${link.href}`}>
                     <IconButton
                         sx={link?.sx || {
                         color: '#3b5998',
