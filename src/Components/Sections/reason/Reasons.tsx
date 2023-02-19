@@ -44,7 +44,7 @@ const Reasons = () => {
                         }}>
                             <img
                                 src="https://source.unsplash.com/user/c_v_r/1600x1000"
-                                alt=""
+                                alt="Image"
                                 className="img border "/>
                         </Box>
                     </Box>
@@ -72,7 +72,7 @@ const Reasons = () => {
                             color: '#515151 !important'
                         }}
                             component='h4'>
-                                According to Ada Durzyńska, "70-80% of people were researching companies online before visiting it/making a purchase, and the same percentage of customers could be lost to small businesses without a website"
+                                According to Ada Durzyńska, &quot;70-80% of people were researching companies online before visiting it/making a purchase, and the same percentage of customers could be lost to small businesses without a website&quot;
                         </Typography>
                         <Typography
                             className='desc2'
@@ -119,6 +119,7 @@ const Reasons = () => {
                             <Box className='  center '>
                                 <a
                                 target="_blank"
+                                rel="noreferrer" 
                                     href='https://www.getresponse.com/blog/why-do-i-need-a-website#:~:text=1.-,Having%20a%20website%20makes%20you%20look%20professional%20and%20increases%20trust,is%20an%20instant%20credibility%20boost.'
                                     className='link color'
                                     style={{

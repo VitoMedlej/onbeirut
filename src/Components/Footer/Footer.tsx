@@ -55,7 +55,7 @@ const Footer = () => {
                         <Typography component='h6' sx={{fontSize:'.9em'}}>
                           {link.title}:
                         </Typography>
-                        {link.href ? <a target="_blank" href={link.href}  className='white'>
+                        {link.href ? <a rel="noreferrer"   target="_blank" href={link.href}  className='white'>
                               {link.value}
                         </a> : <Typography component='h6' sx={{fontSize:'1em'}}>
                           {link.value}

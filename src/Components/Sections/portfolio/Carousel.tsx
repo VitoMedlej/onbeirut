@@ -43,7 +43,7 @@ export default function App() {
             <Box 
             className='center auto'
             sx={{background:'white',width:{xs:'100%',sm:'90%'},maxWidth:'1000px',pb:1,maxHeight:'500px'}}>
-            <a href={project.href} target='_blank'>
+            <a href={project.href} target='_blank ' rel="noreferrer" >
                     <img className='img' src={`${project.img}`} alt={`${project.img} Image`} />
             </a>
             <Divider/>
