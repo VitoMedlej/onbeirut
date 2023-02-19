@@ -40,6 +40,9 @@ $clr: #112a6f;
 .flex {
     display: flex;
 }
+.end {
+    justify-content: flex-end;
+}
 .col {
     flex-direction: column;
 }

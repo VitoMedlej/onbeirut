@@ -47,6 +47,10 @@ h6 {
   display: flex;
 }
 
+.end {
+  justify-content: flex-end;
+}
+
 .col {
   flex-direction: column;
 }
