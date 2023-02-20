@@ -153,11 +153,16 @@ h6 {
   color: #d2d2d2;
 }
 
+.title4 {
+  font-weight: 500 !important;
+  font-size: 1.3em !important;
+}
+
 .layer {
   position: absolute;
   top: 0;
   right: 0;
-  background-color: rgba(0, 0, 0, 0.3019607843);
+  background-color: rgba(0, 0, 0, 0.4392156863);
   z-index: 55;
   width: 100%;
   height: 100%;

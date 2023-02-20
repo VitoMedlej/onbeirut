@@ -9,39 +9,68 @@ import { BsArrowUpRight} from 'react-icons/bs';
 
 const Card = () => {
     return (
-        <Box sx={{
+        <Box 
+        className='shadow'
+        sx={{
             position:'absolute',
-            width:'200px',background:'red',height:'120px'}}>
-            foo
+            top:'25%',
+            left:'3%',
+            zIndex:12412412,
+            px:1,
+            borderRadius:'6px',
+     width:'200px',background:'white',height:'120px'}}>
+            <Typography
+            component='h1'
+            className='title4'
+            >
+                Web Development
+            </Typography>
+            <Typography
+            component='p'
+            className='desc3'
+            >
+                Web Development related shit
+            </Typography>
         </Box>
     )
 }
 const Index = () => {
     return (
-        <>
-            <Box  sx={{
+        <Box sx={{
+
+        }}>
+            <Box  
+            className='mx'
+            sx={{
                 px: '1em'
             }}>
 
                 <Typography
-                    className='title2'
+                    className='title2 '
                     sx={{
                     py: '1em'
                 }}>Why Would You Need A Website?</Typography>
             </Box>
-            <Grid  className='mx' container>
-                <Grid xs={12}  item>
+            <Grid
+            sx={{
+                background: '#00ff1875',
+                zIndex:'4124'
+            }}
+            container>
+                <Grid
+                         className=' mx'
+                
+                xs={12}  item>
                     <Box
-                       
                         sx={{
-                        background: '#00ff1875',
+                        // background: '#00ff1875',
                         mb:'6em',
                         height: {xs:'220px',sm:'400px',md:'600px !important'},
                         width:'100%',
                     }}>
                      
                         <Box
-                         className='relative'
+                         className='relative mx'
                             sx={{
                                
                                 transform:'translateY(-4em)',
@@ -62,7 +91,7 @@ const Index = () => {
               
             </Grid>
             <Divider></Divider>
-        </>
+        </Box>
 
     )
 }
