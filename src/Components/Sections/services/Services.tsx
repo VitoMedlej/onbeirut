@@ -7,18 +7,44 @@ import { BsArrowUpRight} from 'react-icons/bs';
 
 
 
-const Card = () => {
+const Card = ({bg,title}:{title?:any,bg:string}) => {
     return (
         <Box 
         className='shadow'
         sx={{
             position:'absolute',
-            top:'25%',
-            left:'3%',
+            top:{xs:'90%',md:'25%'},
+            left:{md:'3%'},
             zIndex:12412412,
-            px:1,
-            borderRadius:'6px',
-     width:'200px',background:'white',height:'120px'}}>
+            width:'100%',
+          
+     maxWidth:{md:'300px'}
+     ,background:'white',minHeight:'120px'}}>
+        <Box 
+        className='flex gap' sx={{
+              padding:{xs:2,md:3},
+        }}>
+
+            <Box>
+
+            <Typography
+            component='h1'
+            className='title4 flex center items-center '
+            sx={{
+                color:'white',
+                background:bg
+                ,padding:1.5,
+                borderRadius:'50%',
+                width:'25px',
+                height:'25px',
+                textAlign:'center'}}
+            >
+                1
+            </Typography>
+            </Box>
+
+            <Box className='flex col'>
+
             <Typography
             component='h1'
             className='title4'
@@ -27,10 +53,14 @@ const Card = () => {
             </Typography>
             <Typography
             component='p'
-            className='desc3'
+            sx={{pt:'.25em'}}
+            className='desc4'
             >
-                Web Development related shit
+                Web Development related shit, related shit related shit related shit
             </Typography>
+            </Box>
+
+                </Box>
         </Box>
     )
 }
@@ -48,7 +78,7 @@ const Index = () => {
                 <Typography
                     className='title2 '
                     sx={{
-                    py: '1em'
+                    py: '2em'
                 }}>Why Would You Need A Website?</Typography>
             </Box>
             <Grid
@@ -65,6 +95,7 @@ const Index = () => {
                         sx={{
                         // background: '#00ff1875',
                         mb:'6em',
+                        mt:3,
                         height: {xs:'220px',sm:'400px',md:'600px !important'},
                         width:'100%',
                     }}>
@@ -84,7 +115,7 @@ const Index = () => {
                             <img
                                 src={`https://yi-files.s3.eu-west-1.amazonaws.com/products/983000/983190/1652411-full.jpg`} alt="Image of website desgin"
                                 className="img cover border "/>
-                        <Card/>
+                        <Card bg={'#11b521'} title=""/>
                         </Box>
                     </Box>
                 </Grid>
