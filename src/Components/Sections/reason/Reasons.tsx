@@ -16,14 +16,14 @@ const Reasons = () => {
                 <Typography
                     className='title2'
                     sx={{
-                    py: '1em'
+                    py: '2em'
                 }}>Why Would You Need A Website?</Typography>
             </Box>
             <Grid container>
                 <Grid xs={12} md={6} item>
                     <Box
                         sx={{
-                        background: '#00ff1875',
+                        background: '#427dff',
                         py: {
                             xs: '0em',
                             md: '6em'
@@ -43,7 +43,9 @@ const Reasons = () => {
                             height: '100%'
                         }}>
                             <img
-                                src={`https://res.cloudinary.com/dwxm8f25f/image/upload/v1676813799/google-analytics-audience-template_jr8vxg.png`}                                alt="Image of website analytics"
+                            src={`https://lh5.googleusercontent.com/NzdKYIuj7RtghznOG_EZAfqdV5NhGdCT7X5COyza-SbJRyH7w17PJGs0gIXG1KKCYq0EFTO_mfLAJgPQjvxWVbVeWUgdUz1faKD_ULsIM2zgLjfsfKxFRCfY1zFTqaliTQraeMwb`}
+                                // src={`https://res.cloudinary.com/dwxm8f25f/image/upload/v1676813799/google-analytics-audience-template_jr8vxg.png`}    
+                                                            alt="Image of website analytics"
                                 className="img border "/>
                         </Box>
                     </Box>
