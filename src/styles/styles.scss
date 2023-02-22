@@ -138,6 +138,12 @@ $clr: #112a6f;
     font-weight: 400 !important;
     color:rgb(95, 95, 95) !important;
 }
+.op0 {
+    opacity: 0;
+}
+.translate{
+    transform: translateY(.55em);
+}
 .layer {
     position: absolute;
     top: 0;

@@ -1,8 +1,16 @@
 import CustomButton from '@/Components/Buttons/CustomButton'
 import {Box, Grid, Typography} from '@mui/material'
-import React from 'react'
+import React, { useEffect } from 'react'
+import gsap from 'gsap';
 
 const Intro = () => {
+    useEffect(() => {
+        gsap.to('.t1',{opacity:1,duration:'.5',delay:.2,y:0})
+        gsap.to('.t2',{opacity:1,duration:'.5',delay:.6,y:0})
+        gsap.to('.btn-1',{opacity:1,duration:'.5',delay:.9,y:0})
+        gsap.to('.img-1',{opacity:1,duration:'1',delay:1.4,y:0})
+    }, [])
+    
     return (
         <Box className="bg " sx={{
             pb: '3em'
@@ -22,6 +30,7 @@ const Intro = () => {
                     <Grid item xs={12} md={8}>
 
                         <Typography
+                            
                             component='h1'
                             sx={{
                             maxWidth: 'md',
@@ -30,7 +39,7 @@ const Intro = () => {
                                 md: '1em'
                             },
                         }}
-                            className='title'>
+                            className='title t1 op0 translate'>
                                 The Web Dev Agency You Always Wanted
                         </Typography>
                     </Grid>
@@ -48,12 +57,13 @@ const Intro = () => {
                         item
                         xs={12}
                         md={4}>
-                        <Typography component='h3' className='desc1'>
+                        <Typography component='h3' className='desc1 t2 op0 translate'>
                             Your bussiness deserves an awesome website, we are here
                             to ensure that.
 
                         </Typography>
                         <CustomButton
+                        className='btn-1 translate op0'
                             sx={{
                                 maxWidth:'200px !important',
                             background: 'white',
@@ -69,7 +79,7 @@ const Intro = () => {
                 </Grid>
 
             </Box>
-            <Box >
+            <Box className='img-1 translate op0'>
                 <Box
                     sx={{
                     width: '90%',

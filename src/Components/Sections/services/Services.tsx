@@ -1,9 +1,8 @@
-import CustomButton from '@/Components/Buttons/CustomButton'
+
 import {Box, Divider, Grid, Typography} from '@mui/material'
-import Link from 'next/link'
-import React from 'react'
-import {BiLinkExternal} from 'react-icons/bi'
-import { BsArrowUpRight} from 'react-icons/bs';
+
+import React, { useEffect } from 'react'
+import gsap from 'gsap'
 
 
 
@@ -71,6 +70,10 @@ const Card = ({mobile,bg,n,title,text,right,top,sx,bottom,left}:{mobile?:boolean
     )
 }
 const Index = () => {
+    useEffect(() => {
+        gsap.to('.t-3',{opacity:1,duration:'.5',scrollTrigger:{trigger:'.t-3',}})
+    }, [])
+    
     return (
         <Box sx={{
 
@@ -82,10 +85,10 @@ const Index = () => {
             }}>
 
                 <Typography
-                    className='title2 '
+                    className='title2 t-3 op0 translate'
                     sx={{
                     py: '2em'
-                }}>Why Would You Need A Website?</Typography>
+                }}>Services That We Master</Typography>
             </Box>
             <Grid
 
@@ -165,7 +168,7 @@ const Index = () => {
 
                     
                 </Grid>
-                <Grid xs={12} md={0}>
+                <Grid item xs={12} md={0}>
                     <Box sx={{transform:'translateY(-30%)'}}>
 
                         <Card

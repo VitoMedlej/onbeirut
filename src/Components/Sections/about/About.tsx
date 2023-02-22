@@ -1,12 +1,23 @@
 import {Typography, Box, Divider} from "@mui/material"
+import { useEffect } from "react"
+import gsap from 'gsap';
+
 
 const About = () => {
+    useEffect(() => {
+        gsap.to('.text-1',{opacity:1,duration:1,scrollTrigger:{
+            trigger : '.text-1',
+            start : '0% 40%'
+        }})
+    }, [])
+    
     return (
         <>
 
 <Box id='about' className='mx'>
 
             <Typography
+            className='text-1 translate op0'
                 sx={{
                     maxWidth:'md',
                     fontSize: {
