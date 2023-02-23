@@ -26,9 +26,10 @@ return (
       <Logo flex={{xs:1,md:0}} color='black'/>
       <Box className='topbar-links gap-2'  sx={{fontWeight:'300',fontSize:'1.3em',flex:1,ml:5,display:{xs:'none',md:'flex'}}}>
         <Link className='black'  href={'/'}>Home</Link>
+        <Link className='black'  href={'#Services'}>Services</Link>
         <Link className='black'  href={'#pricing'}>Pricing</Link>
         <Link className='black'  href={'#portfolio'}>Projects</Link>
-        <Link className='black'  href={'/faq'}>FAQ</Link>
+        {/* <Link className='black'  href={'/faq'}></Link> */}
       </Box>
       {/* <Box className='topbar-links' sx={{xs:'none',md:'flex'}}>
         <Link href='/'>

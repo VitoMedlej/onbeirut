@@ -3,6 +3,8 @@ import {Box, Divider, Grid, Typography} from '@mui/material'
 
 import React, { useEffect } from 'react'
 import gsap from 'gsap'
+import CustomButton from '@/Components/Buttons/CustomButton'
+import Link from 'next/link'
 
 
 
@@ -79,9 +81,7 @@ const Index = () => {
     }, [])
     
     return (
-        <Box sx={{
-
-        }}>
+        <Box id='Services'>
             <Box  
             className='mx'
             sx={{
@@ -116,7 +116,7 @@ const Index = () => {
                     }}>
                      
                         <Box
-                         className='relative mx serviceimg op0 translate'
+                         className='relative mx serviceimg op0 '
                             sx={{
                                
                                 transform:{xs:'translateY(-1em)',md:'translateY(-4em)'},
@@ -208,7 +208,19 @@ const Index = () => {
                              />
                             </Box>
                 </Grid>
-              
+                <Grid item  xs={12}>
+                    <Box  sx={{mb:'6em !important'}} className='gap mx center auto flex col'>
+                        <Typography  component='h2' className='desc3'>
+                    Need something different?
+                        </Typography>
+                        <Link className='decor-none' style={{height:'max-content'}} href='#contact'>
+
+                <CustomButton >
+                            Tell Us Your Needs
+                </CustomButton>
+                        </Link>
+                    </Box>
+                </Grid>
             </Grid>
             <Divider></Divider>
         </Box>

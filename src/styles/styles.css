@@ -140,6 +140,10 @@ h6 {
   color: black !important;
 }
 
+.decor-none {
+  text-decoration: none !important;
+}
+
 .topbar-links a {
   text-decoration: none;
   color: white;

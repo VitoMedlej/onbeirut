@@ -25,8 +25,8 @@ const Reasons = () => {
                     my: '2em'
                 }}>Why Would You Need A Website?</Typography>
             </Box>
-            <Grid container>
-                <Grid xs={12} md={6} item>
+            <Grid container className='flex items-between'>
+                <Grid xs={12} md={5.9} item>
                     <Box
                         sx={{
                         background: '#427dff',
