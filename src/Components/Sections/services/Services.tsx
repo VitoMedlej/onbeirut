@@ -6,10 +6,10 @@ import gsap from 'gsap'
 
 
 
-const Card = ({mobile,bg,n,title,text,right,top,sx,bottom,left}:{mobile?:boolean,n?:string|number,right?:any,bottom?:any,sx?:any,top?:any,left?:any,title:string,text:string,bg:string}) => {
+const Card = ({mobile,bg,n,className,title,text,right,top,sx,bottom,left}:{className:string,mobile?:boolean,n?:string|number,right?:any,bottom?:any,sx?:any,top?:any,left?:any,title:string,text:string,bg:string}) => {
     return (
         <Box 
-        className='shadow'
+        className={`${className} shadow op0 translate `}
         sx={{
             height:'fit-content',
              display:mobile ? {xs:'flex',md:'none'} : {xs:'none',md:'flex'},
@@ -72,6 +72,10 @@ const Card = ({mobile,bg,n,title,text,right,top,sx,bottom,left}:{mobile?:boolean
 const Index = () => {
     useEffect(() => {
         gsap.to('.t-3',{opacity:1,duration:'.5',scrollTrigger:{trigger:'.t-3',}})
+        gsap.to('.serviceimg',{opacity:1,duration:'1',scrollTrigger:{trigger:'.sect'}})
+        gsap.to('.card1',{opacity:1,delay:.35,duration:'.5',scrollTrigger:{trigger:'.card1',start:'40% 70%',markers:false}})
+        gsap.to('.card2',{opacity:1,delay:.45,duration:'.5',scrollTrigger:{trigger:'.card1',start:'40% 70%',markers:false}})
+        gsap.to('.card3',{opacity:1,delay:.55,duration:'.5',scrollTrigger:{trigger:'.card1',start:'50% 70%',markers:false}})
     }, [])
     
     return (
@@ -92,14 +96,14 @@ const Index = () => {
             </Box>
             <Grid
 
-            className='bg'
+            className='bg services-section'
             sx={{
                 // background: '#00ff1875',
                 zIndex:'4124'
             }}
             container>
                 <Grid
-                         className=' mx'
+                         className=' mx sect'
                 
                 xs={12}  item>
                     <Box
@@ -112,7 +116,7 @@ const Index = () => {
                     }}>
                      
                         <Box
-                         className='relative mx'
+                         className='relative mx serviceimg op0 translate'
                             sx={{
                                
                                 transform:{xs:'translateY(-1em)',md:'translateY(-4em)'},
@@ -122,10 +126,10 @@ const Index = () => {
                             mt:'4em',
                           
                         }}>
-                               <Box className='layer border' />
+                               <Box className='layer border  ' />
                             <img
                                 src={`https://yi-files.s3.eu-west-1.amazonaws.com/products/983000/983190/1652411-full.jpg`} alt="Image of website desgin"
-                                className="img cover border "/>
+                                className="img cover border  "/>
                         {/* <Card bg={'#11b521'} title=""/>
                         <Card 
                         top={{xs:'20%',md:'15%'}}
@@ -134,7 +138,7 @@ const Index = () => {
                      
                              <Card 
                              n={'1'}
-                            
+                            className={'card1'}
                         top={'15%'}
                         left={'-2%'}
                        
@@ -145,6 +149,8 @@ const Index = () => {
                         />
                            <Card 
                              n={'3'}
+                            className={'card3'}
+
                              bottom={'-5%'}
                              right={'2%'}
                              bg={'#004886'} 
@@ -153,6 +159,7 @@ const Index = () => {
                         />
                              <Card 
                              n={'2'}
+                            className={'card2'}
                              
                         top={'10%'}
                         right={'4%'}
@@ -172,6 +179,8 @@ const Index = () => {
                     <Box sx={{transform:'translateY(-30%)'}}>
 
                         <Card
+                            className={'card1'}
+
                           title="Static Websites"
                           text="If you need a couple of pages and don't need the data to change. We build them really quick! They're simple, cheap, and really
                           nice looking!"
@@ -179,6 +188,8 @@ const Index = () => {
                         n={1}
                         bg={'#562d2d'} />
                         <Card 
+                            className={'card2'}
+
                         n={2}    text={`Have a store and want to sell online? We build fast ecommerce sites and
                         can differentiate it from any other boring e-stores, best way to increase sales.
                         `}
@@ -187,6 +198,8 @@ const Index = () => {
                             mobile
                             bg={'#3b1f74'} />
                              <Card 
+                            className={'card3'}
+
                             title="Dynamic Websites"
                             text={'If your data regularly, you can update it whenever you like. We develop them from scratch so you get the fastest and best results possible.'}
                             mobile

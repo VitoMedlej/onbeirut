@@ -11,7 +11,56 @@ import SocialMedia from '../Sections/Social/SocialMedia';
 
 
 
-
+export const Navbar = ({isVisible,open,setOpen} : {open:boolean,isVisible: boolean,setOpen:any}) => {
+return (
+  <AppBar 
+  className='br'
+  sx={{background:'white',
+  color:'black',
+  display:isVisible ? 'flex' : 'none'
+  
+  ,width:'100%',boxShadow:'none'}}
+  position="fixed">
+    <Toolbar sx={{justifyContent:'space-between'}}>
+      
+      <Logo flex={{xs:1,md:0}} color='black'/>
+      <Box className='topbar-links gap-2'  sx={{fontWeight:'300',fontSize:'1.3em',flex:1,ml:5,display:{xs:'none',md:'flex'}}}>
+        <Link className='black'  href={'/'}>Home</Link>
+        <Link className='black'  href={'#pricing'}>Pricing</Link>
+        <Link className='black'  href={'#portfolio'}>Projects</Link>
+        <Link className='black'  href={'/faq'}>FAQ</Link>
+      </Box>
+      {/* <Box className='topbar-links' sx={{xs:'none',md:'flex'}}>
+        <Link href='/'>
+          <Typography>Some Link</Typography>
+        </Link>
+      </Box> */}
+      {/* <CustomButton
+       sx={{color:'black',display:{xs:'none',md:'flex'},mx:'.75em'}} variant='v3'>
+        Our Pricings
+      </CustomButton> */}
+      <Link href='#contact'>
+      <CustomButton sx={{display:{xs:'none',sm:'flex'}}}>
+      Contact Us
+      </CustomButton>
+      </Link>
+      {/* <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+        News
+      </Typography> */}
+      {/* <Button color="inherit">Login</Button> */}
+      <IconButton
+        onClick={()=>setOpen(!open)}
+        size="large"
+        color="inherit"
+        aria-label="menu"
+        sx={{display:{xs:'flex',md:'none'}, ml: 2 }}
+      >
+        <VscMenu />
+      </IconButton>
+    </Toolbar>
+  </AppBar>
+)
+}
 
 
 export default function ButtonAppBar() {
@@ -80,52 +129,7 @@ export default function ButtonAppBar() {
 
 
 
-      <AppBar 
-      className='br'
-      sx={{background:'white',
-      color:'black',
-      display:isVisible ? 'flex' : 'none'
-      
-      ,width:'100%',boxShadow:'none'}}
-      position="fixed">
-        <Toolbar sx={{justifyContent:'space-between'}}>
-          
-          <Logo flex={{xs:1,md:0}} color='black'/>
-          <Box className='topbar-links gap-2'  sx={{fontWeight:'300',fontSize:'1.3em',flex:1,ml:5,display:{xs:'none',md:'flex'}}}>
-            <Link className='black'  href={'/'}>Home</Link>
-            <Link className='black'  href={'#about'}>About</Link>
-            <Link className='black'  href={'#pricing'}>Pricing</Link>
-            <Link className='black'  href={'#portfolio'}>Projects</Link>
-          </Box>
-          {/* <Box className='topbar-links' sx={{xs:'none',md:'flex'}}>
-            <Link href='/'>
-              <Typography>Some Link</Typography>
-            </Link>
-          </Box> */}
-          {/* <CustomButton
-           sx={{color:'black',display:{xs:'none',md:'flex'},mx:'.75em'}} variant='v3'>
-            Our Pricings
-          </CustomButton> */}
-          <Link href='#contact'>
-          <CustomButton sx={{display:{xs:'none',sm:'flex'}}}>
-          Contact Us
-          </CustomButton>
-          </Link>
-          {/* <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-            News
-          </Typography> */}
-          {/* <Button color="inherit">Login</Button> */}
-          <IconButton
-            onClick={()=>setOpen(!open)}
-            size="large"
-            color="inherit"
-            aria-label="menu"
-            sx={{display:{xs:'flex',md:'none'}, ml: 2 }}
-          >
-            <VscMenu />
-          </IconButton>
-        </Toolbar>
-      </AppBar>
+<Navbar isVisible={isVisible} open={open} setOpen={setOpen} />     
     </Box>
     <Drawer
       anchor={'right'}

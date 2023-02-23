@@ -1,12 +1,18 @@
 import CustomButton from '@/Components/Buttons/CustomButton'
 import {Box, Grid, Typography} from '@mui/material'
 import Link from 'next/link'
-import React from 'react'
+import React, { useEffect } from 'react'
 import {BiLinkExternal} from 'react-icons/bi'
 import { BsArrowUpRight} from 'react-icons/bs';
-
+import gsap from 'gsap'
 
 const Reasons = () => {
+    useEffect(() => {
+        gsap.to('.tt-4',{opacity:1,duration:.7,scrollTrigger:{trigger:'.tt-4',start:'top 70%',markers:false}})
+        gsap.to('.reason-img',{opacity:1,duration:.7,scrollTrigger:{trigger:'.reason-img',start:'top 70%',markers:false}})
+        gsap.to('.texts',{opacity:1,stagger:.15,duration:.7,scrollTrigger:{trigger:'.texts',start:'top 70%',markers:false}})
+    }, [])
+    
     return (
         <>
             <Box className='mx' sx={{
@@ -14,9 +20,9 @@ const Reasons = () => {
             }}>
 
                 <Typography
-                    className='title2'
+                    className='title2 op0 translate tt-4'
                     sx={{
-                    py: '2em'
+                    my: '2em'
                 }}>Why Would You Need A Website?</Typography>
             </Box>
             <Grid container>
@@ -30,6 +36,7 @@ const Reasons = () => {
                         }
                     }}>
                         <Box
+                        className='reason-img translate op0'
                             sx={{
                             maxHeight: '500px',
                             transform: {
@@ -68,7 +75,7 @@ const Reasons = () => {
                     }}
                         className='flex  auto   col items-center '>
                         <Typography
-                            className='desc2'
+                            className='desc2 translate op0 texts'
                             sx={{
                             color: '#515151 !important'
                         }}
@@ -76,7 +83,7 @@ const Reasons = () => {
                                 According to Ada Durzyńska, &quot;70-80% of people were researching companies online before visiting it/making a purchase, and the same percentage of customers could be lost to small businesses without a website&quot;
                         </Typography>
                         <Typography
-                            className='desc2'
+                            className='desc2 translate op0 texts'
                             sx={{
                             pt:1,
                             color: '#515151 !important'
@@ -86,7 +93,7 @@ const Reasons = () => {
                                 that produces great results and growth.
                         </Typography>
                         <Link
-                            className='flex center'
+                            className='flex center op0 texts  '
                             href='#contact'
                             style={{
                             width:'100%',
@@ -95,6 +102,7 @@ const Reasons = () => {
                             paddingTop: '.75em'
                         }}>
                             <Typography
+                            className='translate op0 texts'
                                 component='h1'
                                 sx={{
                                     fontWeight: '500',
@@ -112,12 +120,12 @@ const Reasons = () => {
                         }}
                             className="flex gap shadow">
                             <BiLinkExternal
-                                className='color'
+                                className='color op0 texts  center'
                                 style={{
                                 fontSize: '1.5em',
                                 paddingTop: '.25em'
                             }}/>
-                            <Box className='  center '>
+                            <Box className=' translate op0 texts  center '>
                                 <a
                                 target="_blank"
                                 rel="noreferrer" 

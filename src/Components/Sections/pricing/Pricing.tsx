@@ -1,7 +1,8 @@
 import CustomButton from '@/Components/Buttons/CustomButton'
 import {Box, Button, Grid, Typography} from '@mui/material'
 import Link from 'next/link';
-
+import { useEffect } from 'react';
+import gsap from 'gsap'
 import { BsArrowUpRight} from 'react-icons/bs';
 
 
@@ -26,6 +27,7 @@ const PlanCard = ({
         
     return (
         <Box
+        className='plan-card translate op0'
             sx={{
             position : 'relative',
             textAlign: 'left',
@@ -120,6 +122,10 @@ const PlanCard = ({
 
 
 const Index = () => {
+    useEffect(() => {
+        gsap.to('.price-t1',{opacity:1,duration:.7,stagger:.25,scrollTrigger:{trigger:'.price-t1',start:'top 70%'}})
+        gsap.to('.plan-card',{opacity:1,delay:.1,duration:.7,stagger:.25,scrollTrigger:{trigger:'.plan-card',markers:false,start:'top 70%'}})
+    }, [])
     return (
         <Box 
         id='pricing'
@@ -147,7 +153,7 @@ const Index = () => {
                                 xs: '.15em',
                             },
                         }}
-                            className='title2'>
+                            className='title2 price-t1 translate op0'>
                                     Our Services Are Priced Perfectly.
                         </Typography>
                         <Typography
@@ -155,11 +161,13 @@ const Index = () => {
                             component='p'
                             sx={{
                             maxWidth: 'md',
-                            pb: {
+                            py: {
                                 xs: '.15em',
+                                sm: '.25em',
+                                md: '.55em',
                             },
                         }}
-                            className='desc2'>
+                            className='desc2 price-t1 translate op0'>
                                     Find better prices and get 100% off.
                         </Typography>
                

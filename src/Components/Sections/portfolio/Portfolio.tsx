@@ -1,9 +1,13 @@
-import CustomButton from '@/Components/Buttons/CustomButton'
 import {Box, Grid, Typography} from '@mui/material'
-import React from 'react'
+import React, { useEffect } from 'react'
 import Carousel from './Carousel'
+import gsap from 'gsap';
+
 
 const Index = () => {
+    useEffect(() => {
+        gsap.to('.tt-5',{opacity:1,duration:.7,scrollTrigger:{trigger:'.tt-5',start:'top 70%'}})
+    }, [])
     return (
         <Box 
         id='portfolio' className="bg " sx={{
@@ -32,7 +36,7 @@ const Index = () => {
                                 xs: '.15em',
                             },
                         }}
-                            className='title2'>
+                            className='title2 tt-5 op0 translate'>
                             Recent Success Stories From Our Clients
                         </Typography>
                
