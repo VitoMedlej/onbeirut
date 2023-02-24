@@ -7,7 +7,7 @@ import {AiFillPhone,AiOutlineMail} from 'react-icons/ai'
 import {ImLocation2} from 'react-icons/im'
 
 const footerLinks =[{title:'Home', href:'/'}, {title:'Pricing',href:'#pricing'}, {title:'About',href:'#about'},{title:'Portfolio',href:'#portfolio'}]
-const footerMedia = [{title:'Email',value:'vito.medlej@gmail.com',icon:AiOutlineMail},
+const footerMedia = [{title:'Email',value:'onbeirut@gmail.com',icon:AiOutlineMail},
 {title:'Phone',icon:AiFillPhone,value:'+961/ 81826445'},
 {title:'Location',value:'Lebanon/Beirut',icon:ImLocation2}
 ,{title:'Open Days',value:'Open 24/7',icon:FaBusinessTime}]
@@ -25,8 +25,8 @@ const Footer = () => {
         <Grid sx={{mb:1}}  className='' xs={12} sm={12} md={3.6} item>
           <Logo/>
         <Typography className='desc3' sx={{fontSize:'.9em'}} component='p'>
-          We are a team of lebanese software engineers focused on building web solutions for small-medium businesses, and help them with their online presence to ensure that
-          you wont lose out on a massive market that you could earn a lot from 
+          We are a software engineering agency focused on building web solutions for small-medium businesses. We help them with their online presence to ensure that
+          you will not lose out on a massive market that you could earn a lot from. all for an insignificant cost. 
         </Typography>
               
         </Grid>
