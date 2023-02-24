@@ -109,11 +109,12 @@ const Intro = () => {
                 }}
                     className="mx">
                     <img
+
                         style={{
                         borderRadius: '7px'
                     }}
                         src="https://kangxiang.info/wp-content/uploads/2017/11/website-design-process-kl-selangor-scaled.jpg"
-                        alt=""
+                        alt="Intro Section Main Image"
                         className="img"/>
                 </Box>
             </Box>

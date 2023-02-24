@@ -8,7 +8,7 @@ import Link from 'next/link'
 
 
 
-const Card = ({mobile,bg,n,className,title,text,right,top,sx,bottom,left}:{className:string,mobile?:boolean,n?:string|number,right?:any,bottom?:any,sx?:any,top?:any,left?:any,title:string,text:string,bg:string}) => {
+const Card = ({mobile,bg,n,titleLink,className,title,text,right,top,sx,bottom,left}:{titleLink:string,className:string,mobile?:boolean,n?:string|number,right?:any,bottom?:any,sx?:any,top?:any,left?:any,title:string,text:string,bg:string}) => {
     return (
         <Box 
         className={`${className} shadow op0 translate `}
@@ -51,6 +51,9 @@ const Card = ({mobile,bg,n,className,title,text,right,top,sx,bottom,left}:{class
             </Box>
 
             <Box className='flex col'>
+        <a 
+        className='link-title black'
+        target="_blank" href={titleLink}>
 
             <Typography
             component='h1'
@@ -58,6 +61,7 @@ const Card = ({mobile,bg,n,className,title,text,right,top,sx,bottom,left}:{class
             >
                 {title}
             </Typography>
+                </a>
             <Typography
             component='p'
             sx={{pt:'.25em'}}
@@ -137,6 +141,8 @@ const Index = () => {
                       
                      
                              <Card 
+                            titleLink='https://www.sanity.io/static-websites'
+
                              n={'1'}
                             className={'card1'}
                         top={'15%'}
@@ -150,7 +156,7 @@ const Index = () => {
                            <Card 
                              n={'3'}
                             className={'card3'}
-
+                            titleLink='https://www.pnjsharptech.com/blog/a-tour-to-explore-importance-benefits-and-amazing-facts-about-dynamic-website/'
                              bottom={'-5%'}
                              right={'2%'}
                              bg={'#004886'} 
@@ -160,10 +166,10 @@ const Index = () => {
                              <Card 
                              n={'2'}
                             className={'card2'}
-                             
+                             titleLink='https://www.ecwid.com/blog/what-is-ecommerce-website.html'
                         top={'10%'}
                         right={'4%'}
-                        text={`Have a store and want to sell online? We build fast ecommerce sites and
+                        text={`Have a store and want to sell online? We build fast online shops and
                         can differentiate it from any other boring e-stores, best way to increase sales.
                         `}
                         title="Ecommerce sites"
@@ -180,7 +186,7 @@ const Index = () => {
 
                         <Card
                             className={'card1'}
-
+                            titleLink='https://www.sanity.io/static-websites'
                           title="Static Websites"
                           text="If you need a couple of pages and don't need the data to change. We build them really quick! They're simple, cheap, and really
                           nice looking!"
@@ -189,8 +195,9 @@ const Index = () => {
                         bg={'#562d2d'} />
                         <Card 
                             className={'card2'}
+                            titleLink='https://www.ecwid.com/blog/what-is-ecommerce-website.html'
 
-                        n={2}    text={`Have a store and want to sell online? We build fast ecommerce sites and
+                        n={2}    text={`Have a store and want to sell online? We build fast online shops and
                         can differentiate it from any other boring e-stores, best way to increase sales.
                         `}
                         title="Ecommerce sites"
@@ -199,6 +206,7 @@ const Index = () => {
                             bg={'#3b1f74'} />
                              <Card 
                             className={'card3'}
+                            titleLink='https://www.pnjsharptech.com/blog/a-tour-to-explore-importance-benefits-and-amazing-facts-about-dynamic-website/'
 
                             title="Dynamic Websites"
                             text={'If your data regularly, you can update it whenever you like. We develop them from scratch so you get the fastest and best results possible.'}

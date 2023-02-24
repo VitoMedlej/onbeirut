@@ -180,7 +180,7 @@ Location:
                     // textAlign: lang('left', 'right', l)
                 }}>
                     <Typography  className='title3' component='h1' >
-                    Contact Us
+                    Call Us
                     </Typography>
                     <Typography
                     className='gray'

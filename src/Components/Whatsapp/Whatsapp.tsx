@@ -21,7 +21,7 @@ const WhatsApp = () => {
                 background:'white',
                 color:'black',
                 boxShadow:'1px 1px 3px #00000033',
-                padding: '1em.75em',
+                padding: '1em .65em',
                 borderRadius: '6px',
             }}>
                 +961 81826445
@@ -38,7 +38,8 @@ const WhatsApp = () => {
             </IconButton> */}
             <div style={{width:'60px',height:'60px'}}>
                
-                <img style={{width:'100%',height:'100%'}} src="https://img.icons8.com/color/480/null/whatsapp--v1.png" alt="" />
+                <img
+                 style={{width:'100%',height:'100%'}} src="https://img.icons8.com/color/480/null/whatsapp--v1.png" alt="Whatsapp Icon" />
             </div>
                </a>
         </div>
