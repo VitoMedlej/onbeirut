@@ -1,21 +1,13 @@
 import {Box, Button, Divider, TextField, Typography} from '@mui/material'
 import {useRouter} from 'next/router'
-import React, {useContext, useRef, useState} from 'react'
+import React, { useRef, useState} from 'react'
 // import Dots from '../Desgin/Dots'
 // import {lang} from '../Navbar/Navbar'
 // import Typography from '../Typographygraphy/Typography'
 import emailjs from '@emailjs/browser';
 import CustomButton from '@/Components/Buttons/CustomButton';
 
-const contacts = [
-    {
-        title: {
-            en: 'Email',
-            ar: 'ايميل'
-        }
 
-    }
-]
 const Contact = () => {
     const form = useRef();
     const [details,
@@ -26,6 +18,7 @@ const Contact = () => {
     // const {l} = useContext(LangContext)
 
     const sendEmail = async(e : any) => {
+        console.log('sendEmail: ');
         setDetails({status: 0, error: ''})
 
         e.preventDefault();
@@ -282,7 +275,7 @@ Location:
                             },
                             width: '100%'
                         }}>
-                            <CustomButton  className='btn b1'>
+                            <CustomButton type="submit"  className='btn b1'>
                                 Submit
                             </CustomButton>
                             <Divider/>

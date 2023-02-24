@@ -27,11 +27,12 @@ const style2 = {
         border: '1px solid'
     }
 }
-const CustomButton = ({className, children, sx, variant} : {
+const CustomButton = ({className, type,children, sx, variant} : {
     sx?: any,
     children: any,
     className ?: string,
-    variant?: string
+    variant?: string;
+    type?:string
 }) => {
     const style = () => {
         if (!variant || variant === 'v1') {
@@ -43,7 +44,8 @@ const CustomButton = ({className, children, sx, variant} : {
     }
     return (
         <Button
-            className={className}
+        type={type ==='submit' ? type : 'button'}    
+        className={className}
             sx={{
             ...style(),
             ...sx
