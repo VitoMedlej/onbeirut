@@ -30,6 +30,7 @@ export default function Home() {
         <link rel="icon" href="/obiconv3.JPG" />
         <meta httpEquiv="content-language" content="en"/>
   <meta charSet="UTF-8"/>
+  <meta name="google-site-verification" content="9QtEh0pfjTn7IgmXS5T9bvVVhTJoOkjmd1VRniUNyf0" />
   <meta name="keywords" content="web development, agency,onbeirut, lebanon, beirut, websites, small business,Sales, web desgin, SEO"/>
   <meta name="page-topic" content="Web Development"/>
   <meta name="page-type" content="Web Development"/>
