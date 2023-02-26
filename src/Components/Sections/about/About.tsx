@@ -43,7 +43,7 @@ const About = () => {
                 
                 Despite being a small agency, we deliver big.
                 <br/>
-               Our goal is to create online presense, followed by major success for small and medium business
+               Our goal is to create online presence, followed by major success for small and medium business
                 that are unable to pay hundreds of dollars, instead we offer you the lowest cost, highest quality 
                 results that you desire and your business deserves.
             </Typography>

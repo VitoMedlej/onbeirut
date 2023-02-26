@@ -78,7 +78,7 @@ const Intro = () => {
                         xs={12}
                         md={4}>
                         <Typography component='h3' className='desc1 t2 op0 translate'>
-                            Your bussiness deserves an awesome website, we are here to ensure that.
+                            Your business deserves an awesome website, we are here to ensure that.
 
                         </Typography>
                         <Link className=' btn-1 decor-none translate op0' href='#contact'>
