@@ -37,8 +37,11 @@ const About = () => {
                 what does this mean? We simple develop personalized, high performance websites that 
                 attracts customers, sales, leads to you; all for an insignificant cost, afterall, we are here
                 to help you grow and not increase your expenses.  */}
-                Put in simple words, we are a Lebanon/Beirut-based web development agency,
+                Put in simple words, we are a Lebanon/Beirut-based web development company,
                 we create all kinds of web solutions from simple websites to small e-shops to complex web applications.
+                <br/>
+                
+                Despite being a small agency, we deliver big.
                 <br/>
                Our goal is to create online presense, followed by major success for small and medium business
                 that are unable to pay hundreds of dollars, instead we offer you the lowest cost, highest quality 

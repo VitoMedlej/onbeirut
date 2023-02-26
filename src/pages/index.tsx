@@ -17,17 +17,20 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Web Design & Development Agency Beirut, Lebanon | onBeirut</title>
-        <meta name="description" content={`OnBeirut is the lowest pricing Lebanon-based web development agency, experienced in building
-        sites for small-medium businesses, We get you to success.`} />
-        
+        {/* <title>Top 1 Best & Cheapest Web Dev Agency in Lebanon | onBeirut</title> */}
+        <title>Top 1 Best & Cheapest Web Dev Agency in Lebanon | onBeirut</title>
+        {/* <title>Web Design & Development Agency Beirut, Lebanon | onBeirut</title> */}
+        {/* <meta name="description" content={`OnBeirut is the lowest pricing Lebanon-based web development agency, experienced in building
+        sites for small-medium businesses, We get you to success.`} />        
         <meta name="og:description" content={`OnBeirut is the lowest pricing Lebanon-based web development agency, experienced in building
-        sites for small-medium businesses, We get you to success.`} />
+        sites for small-medium businesses, We get you to success.`} /> */}
+        <meta name="description" content={`OnBeirut | Website desgin & development agency based in Lebanon. We create web solutions for everyone from simple to complex apps. We get you online success`} />        
+        <meta name="og:description" content={`OnBeirut | Website desgin & development agency based in Lebanon. We create web solutions for everyone from simple to complex apps. We get you online success`} />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/obiconv3.JPG" />
         <meta httpEquiv="content-language" content="en"/>
   <meta charSet="UTF-8"/>
-  <meta name="keywords" content="web development, agency,onbeirut, lebanon, beirut,websites,small business,Sales, web desgin, SEO"/>
+  <meta name="keywords" content="web development, agency,onbeirut, lebanon, beirut, websites, small business,Sales, web desgin, SEO"/>
   <meta name="page-topic" content="Web Development"/>
   <meta name="page-type" content="Web Development"/>
   <meta name="audience" content="Everyone"/>

@@ -35,7 +35,7 @@ const Card = ({mobile,bg,n,titleLink,className,title,text,right,top,sx,bottom,le
             <Box>
 
             <Typography
-            component='h1'
+            component='h2'
             className='title4 flex center items-center '
             sx={{
                 color:'white',
@@ -150,7 +150,7 @@ const Index = () => {
                        
                         bg={'#562d2d'} 
                         title="Static Websites"
-                        text="If you need a couple of pages and don't need the data to change. We build them really quick! They're simple, cheap, and really
+                        text="If you want a couple of pages and don't need the data to change. We build them really quick! They're simple, cheap, and really
                         nice looking!"
                         />
                            <Card 
@@ -188,7 +188,7 @@ const Index = () => {
                             className={'card1'}
                             titleLink='https://www.sanity.io/static-websites'
                           title="Static Websites"
-                          text="If you need a couple of pages and don't need the data to change. We build them really quick! They're simple, cheap, and really
+                          text="If you want a couple of pages and don't need the data to change. We build them really quick! They're simple, cheap, and really
                           nice looking!"
                         mobile
                         n={1}

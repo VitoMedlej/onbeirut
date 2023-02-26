@@ -47,7 +47,7 @@ export default function App() {
                     <img className='img' src={`${project.img}`} alt={`${project.img} Image`} />
             </a>
             <Divider/>
-            <Typography className='center auto flex items-center'  component='h1'>
+            <Typography className='center auto flex items-center'  component='h2'>
                     {project.title}
             </Typography>
             </Box>

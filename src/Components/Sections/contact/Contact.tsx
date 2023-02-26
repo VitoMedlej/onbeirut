@@ -35,7 +35,8 @@ const Contact = () => {
                             }
                         }}
                             className='title2'>
-                                What is stopping you? just message us!
+                                {/* What is stopping you? just message us! */}
+                                Get Your Business Website Built Today!
                         </Typography>
                         
                         <Typography
@@ -47,7 +48,8 @@ const Contact = () => {
                             
                         }}
                             className='desc3'>
-                                Get in touch today, we offer free services as well.
+                                {/* Get in touch today, we offer free services as well. */}
+                                We create you a website now, you pay later.
                         </Typography>
                         <SocialMedia sx={{mt:'.45em !important',justifyContent:'flex-start !important'}}/>
                     </Grid>

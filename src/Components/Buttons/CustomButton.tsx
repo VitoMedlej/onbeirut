@@ -27,8 +27,9 @@ const style2 = {
         border: '1px solid'
     }
 }
-const CustomButton = ({className, type,children, sx, variant} : {
+const CustomButton = ({onClick ,className, type,children, sx, variant} : {
     sx?: any,
+    onClick ?: () => void;
     children: any,
     className ?: string,
     variant?: string;
@@ -44,6 +45,7 @@ const CustomButton = ({className, type,children, sx, variant} : {
     }
     return (
         <Button
+        onClick={onClick && onClick }
         type={type ==='submit' ? type : 'button'}    
         className={className}
             sx={{

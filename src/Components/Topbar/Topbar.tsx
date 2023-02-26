@@ -8,6 +8,7 @@ import { Typography ,Toolbar ,Box,IconButton, Drawer, Divider } from '@mui/mater
 import CustomButton from '../Buttons/CustomButton';
 import Logo from '../Logo/Logo';
 import SocialMedia from '../Sections/Social/SocialMedia';
+import { useRouter } from 'next/router';
 
 
 
@@ -40,9 +41,9 @@ return (
        sx={{color:'black',display:{xs:'none',md:'flex'},mx:'.75em'}} variant='v3'>
         Our Pricings
       </CustomButton> */}
-      <Link href='#contact'>
-      <CustomButton sx={{display:{xs:'none',sm:'flex'}}}>
-      Contact Us
+      <Link className='decor-none' href='#contact'>
+      <CustomButton  sx={{display:{xs:'none',sm:'flex'}}}>
+      Reach Us
       </CustomButton>
       </Link>
       {/* <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
@@ -67,6 +68,7 @@ return (
 export default function ButtonAppBar() {
   const [isVisible, setVisible] = useState(false);
   const [open, setOpen] = useState(false);
+  const router= useRouter()
   useEffect(() => {
 
     const handleScroll = () => {
@@ -82,6 +84,10 @@ export default function ButtonAppBar() {
     };
 
   }, [])
+  const handleClick= async (state?:boolean,href?:string) => {
+      router.push(`${href || '/'} `)
+    
+  }
   return (
     <>
 
@@ -104,10 +110,10 @@ export default function ButtonAppBar() {
           {/* <CustomButton className='bg' sx={{padding:0,display:{xs:'flex',md:'flex'},mx:'.5em'}} variant='standard'>
           Button
           </CustomButton> */}
-          <Link href='#contact'>
+          <Link className='decor-none' href='#contact'>
 
-          <CustomButton sx={{display:{xs:'none',sm:'flex'}}}>
-            Contact Us
+          <CustomButton  sx={{display:{xs:'none',sm:'flex'}}}>
+            Reach Us
           </CustomButton>
           </Link>
 
@@ -150,19 +156,42 @@ export default function ButtonAppBar() {
       </Box>
           <Divider/>
           <Box className='topbar-links gap-2 flex col'  sx={{mx:2,my:2,fontWeight:'300',fontSize:'1.3em',flex:1}}>
-            <Link 
-            onClick={()=>setOpen(false)}
-            className='black'  href={'/'}>Home</Link>
-            <Link className='black'  
+            <CustomButton
+            onClick={()=>{handleClick();setOpen(false)}}
+            variant='v2'
             
-            onClick={()=>setOpen(false)}
-            href={'#about'}>About</Link>
-            <Link
-            onClick={()=>setOpen(false)}
-            className='black'  href={'#pricing'}>Pricing</Link>
-            <Link
-            onClick={()=>setOpen(false)}
-            className='black'  href={'#portfolio'}>Projects</Link>
+            className='black' >Home</CustomButton>
+            <CustomButton className='black'  
+            variant='v2'
+            
+            onClick={()=>{handleClick(false,'#about');setOpen(false)}}
+            >About</CustomButton>
+            
+            <CustomButton
+            variant='v2'
+
+            onClick={()=>{handleClick(false,'#pricing');setOpen(false)}}
+            className='black' >Pricing</CustomButton>
+            <CustomButton
+            variant='v2'
+            onClick={()=>{handleClick(false,'#portfolio');setOpen(false)}}
+            className='black' >Projects</CustomButton>
+                 
+                 <CustomButton
+
+sx={{color:'white !important',width:'100% !important'}}
+
+onClick={()=>handleClick(false,'#contact')}
+              >
+      Reach Us
+            </CustomButton>
+            
+
+                 {/* <Link className='decor-none' href='#contact'>
+      <CustomButton  sx={{width:'100% !important'}}>
+      Reach Us
+      </CustomButton>
+      </Link> */}
           <SocialMedia sx={{margin:'0 !important',gap:.5,padding:'0 !important'}}/> 
           </Box>
     </Drawer>

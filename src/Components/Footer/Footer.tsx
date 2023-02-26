@@ -25,8 +25,10 @@ const Footer = () => {
         <Grid sx={{mb:1}}  className='' xs={12} sm={12} md={3.6} item>
           <Logo/>
         <Typography className='desc3' sx={{fontSize:'.9em'}} component='p'>
-          We are a software engineering agency focused on building web solutions for small-medium businesses. We help them with their online presence to ensure that
-          you will not lose out on a massive market that you could earn a lot from. all for an insignificant cost. 
+          {/* We are a software engineering agency focused on building web solutions for small-medium businesses. We help them with their online presence to ensure that
+          you will not lose out on a massive market that you could earn a lot from. all for an insignificant cost.  */}
+         OnBeirut is a software engineering agency. We offer website design, software development & branding. We are the top 1 agency in Lebanon in terms of speed, cost, and quality of service.
+         Our web solutions get you the online success you wish for. 
         </Typography>
               
         </Grid>

@@ -179,8 +179,8 @@ Location:
                     borderRadius: '9px',
                     // textAlign: lang('left', 'right', l)
                 }}>
-                    <Typography  className='title3' component='h1' >
-                    Call Us
+                    <Typography  className='title3' component='h2' >
+                    Contact Us
                     </Typography>
                     <Typography
                     className='gray'

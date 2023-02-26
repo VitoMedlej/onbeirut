@@ -103,7 +103,7 @@ const Reasons = () => {
                         }}>
                             <Typography
                             className='translate op0 texts'
-                                component='h1'
+                                component='h3'
                                 sx={{
                                     fontWeight: '500',
                                     fontSize: '1.2em'
@@ -147,7 +147,7 @@ const Reasons = () => {
                                 </a>
                                 <Typography
                                     sx={{
-                                    pt: 2.5,
+                                    py: 1,
                                     color:'#717171 !important'
                                 }}
                                     className='desc3'
