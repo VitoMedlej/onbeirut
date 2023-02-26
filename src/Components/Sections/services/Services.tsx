@@ -53,6 +53,7 @@ const Card = ({mobile,bg,n,titleLink,className,title,text,right,top,sx,bottom,le
             <Box className='flex col'>
         <a 
         className='link-title black'
+        rel="noreferrer"
         target="_blank" href={titleLink}>
 
             <Typography
